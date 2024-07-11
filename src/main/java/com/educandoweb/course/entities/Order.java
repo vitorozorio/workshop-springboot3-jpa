@@ -1,12 +1,17 @@
 package com.educandoweb.course.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.*;
-
+import jakarta.persistence.Table;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.GenerationType;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
+
 @Entity
 @Table(name = "tb_order")
 public class Order implements Serializable {
@@ -22,7 +27,7 @@ public class Order implements Serializable {
     @JoinColumn(name = "client_id")
     private User client;
 
-    public Order(){
+    public Order() {
 
     }
 
