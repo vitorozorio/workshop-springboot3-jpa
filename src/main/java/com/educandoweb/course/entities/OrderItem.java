@@ -17,8 +17,7 @@ public class OrderItem implements Serializable {
     private Integer quantity;
     private Double price;
 
-    private OrderItem() {
-
+    public OrderItem() {
     }
 
     public OrderItem(Order order, Product product, Integer quantity, Double price) {
