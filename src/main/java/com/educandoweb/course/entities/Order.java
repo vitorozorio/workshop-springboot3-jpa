@@ -2,8 +2,16 @@ package com.educandoweb.course.entities;
 
 import com.educandoweb.course.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.*;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.CascadeType;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.HashSet;
@@ -87,6 +95,14 @@ public class Order implements Serializable {
 
     public Set<OrderItem> getItems() {
         return items;
+    }
+
+    public Double getTotal() {
+        Double sum= 0.0;
+        for(OrderItem x : items) {
+            sum += x.getSubTotal();
+        }
+        return sum;
     }
 
     @Override

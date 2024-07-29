@@ -1,7 +1,14 @@
 package com.educandoweb.course.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.MapsId;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
@@ -17,6 +24,7 @@ public class Payment implements Serializable {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
     private Instant moment;
 
+    @JsonIgnore
     @OneToOne
     @MapsId
     private Order order;
