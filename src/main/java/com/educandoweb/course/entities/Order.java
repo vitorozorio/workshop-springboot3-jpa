@@ -78,7 +78,7 @@ public class Order implements Serializable {
     public Set<OrderItem> getItems() {
         return items;
     }
- 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
