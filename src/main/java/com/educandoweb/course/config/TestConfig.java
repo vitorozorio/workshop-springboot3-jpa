@@ -1,8 +1,17 @@
 package com.educandoweb.course.config;
 
-import com.educandoweb.course.entities.*;
+import com.educandoweb.course.entities.Category;
+import com.educandoweb.course.entities.Order;
+import com.educandoweb.course.entities.OrderItem;
+import com.educandoweb.course.entities.Payment;
+import com.educandoweb.course.entities.Product;
+import com.educandoweb.course.entities.User;
 import com.educandoweb.course.entities.enums.OrderStatus;
-import com.educandoweb.course.repositories.*;
+import com.educandoweb.course.repositories.CategoryRepository;
+import com.educandoweb.course.repositories.OrderItemRepository;
+import com.educandoweb.course.repositories.OrderRepository;
+import com.educandoweb.course.repositories.ProductRepository;
+import com.educandoweb.course.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Configuration;
