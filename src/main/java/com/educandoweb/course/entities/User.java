@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.GenerationType;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;

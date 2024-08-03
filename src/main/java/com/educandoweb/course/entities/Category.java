@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.GenerationType;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.HashSet;

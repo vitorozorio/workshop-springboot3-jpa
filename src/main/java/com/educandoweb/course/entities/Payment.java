@@ -9,7 +9,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.MapsId;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;

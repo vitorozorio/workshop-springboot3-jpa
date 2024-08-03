@@ -1,7 +1,6 @@
 package com.educandoweb.course.resources.exceptions;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.Instant;
