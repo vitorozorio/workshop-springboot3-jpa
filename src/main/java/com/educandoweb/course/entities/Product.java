@@ -10,7 +10,6 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
-
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
