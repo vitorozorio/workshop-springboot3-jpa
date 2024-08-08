@@ -23,6 +23,12 @@ dependencies {
 	implementation 'com.h2database:h2:2.2.224'
 	implementation 'org.hibernate:hibernate-core:6.2.5.Final'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	compileOnly 'org.projectlombok:lombok:1.18.34'
+	annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+	testCompileOnly 'org.projectlombok:lombok:1.18.34'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
 }
 
 tasks.named('test') {
