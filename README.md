@@ -56,7 +56,7 @@
 - Spring Web
 - JPA
 - Paradigma de orientação a objetos
-- Banco de dados relaciona
+- Banco de dados relacional
 - InteliJ IDEA
 - Insominia
 - Banco de dados H2
