@@ -61,8 +61,6 @@
 - Insominia
 - Banco de dados H2
 
-
-
 <br>
 
 ## **Acesso ao projeto**
